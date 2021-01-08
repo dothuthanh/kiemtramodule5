@@ -1,0 +1,14 @@
+<a routerLink="">Back</a>
+<h1>Tao moi User</h1>
+<form [formGroup]="newBookForm" (ngSubmit)="creatNewBook()">
+  <h1>Title</h1>
+  <input type="text" formControlName="title" id="title">
+  <br>
+  <h1>Author</h1>
+  <input type="text" formControlName="author" id="author">
+  <br>
+  <h1>Description</h1>
+  <input type="text" formControlName="description" id="description">
+  <br>
+  <button type="submit">Tao moi</button>
+</form>

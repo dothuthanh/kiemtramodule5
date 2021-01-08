@@ -1,0 +1,13 @@
+<a routerLink="">Back</a>
+<form [formGroup]="bookForm" (ngSubmit)="updateBook()">
+  <h1>Titlle</h1>
+  <input type="text" formControlName="title" id="username" placeholder="Title" value="{{book.title}}">
+  <br>
+  <h1>Author</h1>
+  <input type="text" formControlName="author" id="author" placeholder="Author" value="{{book.author}}">
+  <br>
+  <h1>Author</h1>
+  <input type="text" formControlName="description" id="description" placeholder="Description" value="{{book.description}}">
+  <br>
+  <button type="submit">Cap nhat</button>
+</form>

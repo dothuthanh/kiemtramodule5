@@ -1,0 +1,13 @@
+<a routerLink="">back </a>
+<form [formGroup]="bookForm" (ngSubmit)="deleteBook()">
+  <h1>Title</h1>
+  {{book.title}}
+  <br>
+  <h1>Author</h1>
+  {{book.author}}
+  <br>
+  <h1>Description</h1>
+  {{book.description}}
+  <br>
+  <button type="submit">Delete</button>
+</form>
